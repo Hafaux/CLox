@@ -4,14 +4,14 @@
 
 int main(int argc, char *argv[])
 {
-  Chunk chonk;
+  Chunk chunk;
 
-  init_chunk(&chonk);
-  write_chunk(&chonk, OP_RETURN);
+  init_chunk(&chunk);
+  write_chunk(&chunk, OP_RETURN);
 
-  disassemble_chunk(&chonk, "test chunk");
+  disassemble_chunk(&chunk, "test chunk");
   
-  free_chunk(&chonk);
+  free_chunk(&chunk);
 
   return 0;
 }
